@@ -10,6 +10,7 @@ require("tape")("is-property", function(t) {
   t.assert(isProperty("f00"))
   t.assert(!isProperty("0bad"))
   t.assert(isProperty("break"))
+  t.assert(!isProperty("@context"))
   
   t.end()
 })
